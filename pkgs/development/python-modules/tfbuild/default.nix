@@ -21,7 +21,7 @@ buildPythonPackage rec {
     owner = "mpearson117";
     repo = pname;
     rev = "refs/tags/v${version}";
-    hash = "";
+    hash = "118skvn92j8rxbhrzx0dxz1x3m4nvrgqcgcxcwnn0ris3ydf3sar";
   };
 
   nativeBuildInputs = [
