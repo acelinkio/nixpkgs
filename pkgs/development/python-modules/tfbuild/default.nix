@@ -28,6 +28,19 @@ buildPythonPackage rec {
     setuptools
   ];
 
+  propagatedBuildInputs = [
+    boto3
+    colorlog
+    confuse
+    GitPython
+    jsonpickle
+    py_console
+    PyYAML
+    pyhcl
+    requests
+    six
+  ];
+
   nativeCheckInputs = [
     pytestCheckHook
   ];
