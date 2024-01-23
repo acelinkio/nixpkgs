@@ -14310,7 +14310,7 @@ self: super: with self; {
 
   tflearn = callPackage ../development/python-modules/tflearn { };
 
-  tfbuild = callPackage ../development/python-modules/tbuild { };
+  tfbuild = callPackage ../development/python-modules/tfbuild { };
 
   tftpy = callPackage ../development/python-modules/tftpy { };
 
