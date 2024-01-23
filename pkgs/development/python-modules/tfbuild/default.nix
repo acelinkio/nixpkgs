@@ -50,7 +50,7 @@ buildPythonPackage rec {
   ];
 
   meta = with lib; {
-    description = "Extensible memoizing collections and decorators";
+    description = "Opinionated terraform wrapper";
     homepage = "https://github.com/mpearson117/tfbuild";
     changelog = "https://github.com/mpearson117/tfbuild/releases/tag/v${version}";
     license = with licenses; [ asl20 ];
