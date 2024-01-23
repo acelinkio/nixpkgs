@@ -2,12 +2,19 @@
 , buildPythonPackage
 , fetchFromGitHub
 , pythonOlder
+, boto3
+, colorlog
+, confuse
+, gitpython
+, jsonpickle
+, py_console
+, pyyaml
+, pyhcl
+, requests
+, six
 
 # build-system
 , setuptools
-
-# tests
-, pytestCheckHook
 }:
 
 buildPythonPackage rec {
@@ -29,20 +36,16 @@ buildPythonPackage rec {
   ];
 
   propagatedBuildInputs = [
-    boto3
+    #boto3
     colorlog
     confuse
-    GitPython
+    gitpython
     jsonpickle
     py_console
-    PyYAML
+    pyyaml
     pyhcl
     requests
     six
-  ];
-
-  nativeCheckInputs = [
-    pytestCheckHook
   ];
 
   pythonImportsCheck = [
